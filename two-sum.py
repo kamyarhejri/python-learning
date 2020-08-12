@@ -6,13 +6,11 @@ Created on Wed Aug 12 10:32:07 2020
 """
 
 def twosum(nums, target):
-    required = {}
-    for i in range(len(nums)):
-        if target - nums[i] in required:
-            print(required)
-            return [required[target - nums[i]],i]
+    d = {}
+    for i in range(0,len(nums)):
+        if nums[i] in d.keys():
+            return [d[nums[i]],i]
         else:
-            required[nums[i]]=i
-            print("else:",required)
+            d[target-nums[i]] = i
             
-print(twosum([2,8,17,3,5,9],12))
+print(twosum([6,6],12))
