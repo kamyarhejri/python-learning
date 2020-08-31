@@ -4,7 +4,7 @@ Created on Fri Aug 28 19:32:11 2020
 
 @author: kamyar
 
-creating my own doubly linked list class
+creating my own doubly-linked list class
 
 """
 
