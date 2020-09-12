@@ -3,6 +3,8 @@
 Created on Sat Sep 12 12:34:26 2020
 
 @author: kamyar
+
+Implementation of Binary Search Tree in Python
 """
 
 class Node():
