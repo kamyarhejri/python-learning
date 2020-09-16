@@ -65,7 +65,7 @@ class BinarySearchTree():
               # we found the node
               # let's cover all different situations to remove 
               # a node in a binary tree:
-              #1: node doesn't have any children (easiest case)
+              #1: the node doesn't have any children (easiest case)
               if not currentnode.left and not currentnode.right:
                   # check if the requested node to remove is root
                   if not parentnode:
@@ -75,7 +75,7 @@ class BinarySearchTree():
                           parentnode.left = None
                       elif parentnode.right == currentnode:
                           parentnode.right = None
-              #2: the node have a right branch only (easy, just reassigning pointers)
+              #2: the node has a right branch (child) only (easy, just reassigning pointers)
               elif not currentnode.left and currentnode.right:
                   if not parentnode:
                       self.root = currentnode.right
@@ -84,7 +84,7 @@ class BinarySearchTree():
                           parentnode.left = currentnode.right
                       elif parentnode.right == currentnode:
                           parentnode.right = currentnode.right
-              #3: the node have a left branch only (easy, just reassigning pointers)
+              #3: the node has a left branch (child) only (easy, just reassigning pointers)
               elif currentnode.left and not currentnode.right:
                   if not parentnode:
                       self.root = currentnode.left
@@ -93,7 +93,7 @@ class BinarySearchTree():
                           parentnode.left = currentnode.left
                       elif parentnode.right == currentnode:
                           parentnode.right = currentnode.left 
-              #4: the node have both right and left branches (hardest, there are
+              #4: the node has both right and left branches (hardest, there are
               # different conditions in this case)
               elif currentnode.left and currentnode.right:
                   # check if the right branch of the node has any left branches
@@ -130,7 +130,7 @@ class BinarySearchTree():
                               parentnode.right = currentnode.right
                               holder = parentnode.right
                               holder.left = currentnode.left                          
-                  return self.root
+              return self.root
           elif value < currentnode.value:
               # if value is smaller than currentnode, go left
               parentnode = currentnode
