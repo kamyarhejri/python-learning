@@ -5,8 +5,6 @@ Created on Tue Aug 11 23:27:23 2020
 @author: kamyar
 """
 
-#a = ['H','L','M','P','P','R','S','b','d','i','n','o','o','p','s']
-#b = [1,5,5,6,7,8,'C','U','V','V','W','f','h','r','s']
 a = [1,3,6,9]
 b = [2,5,7,8]
 
@@ -48,4 +46,5 @@ def mergesort(x,y):
 
 r,p = mergesort(a,b)
 print(r)
-print(p)
+for i in p:
+    print(i, end=' ')   

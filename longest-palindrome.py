@@ -49,7 +49,7 @@ def LargestPal(n : int):
 
   #Keeping track of the time that is taken to solve the problem using time library
   start_time = time.time()
-  #we define a for loop that starts with the lowest z and increment z each time
+  #we define a for loop that starts with the lowest z and increments z each time
   for z in range(2, 2*(9*10**(n-1)) - 1, 1):
     left = 10**n - z
     right = int(str(left)[::-1])
