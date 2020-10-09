@@ -4,7 +4,7 @@ Created on Thu Aug 27 11:55:07 2020
 
 @author: kamyar
 
-making my own signly-linked list class
+making my own singly-linked list class
 """
 
 class Node():
