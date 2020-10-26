@@ -38,7 +38,7 @@ def fibonacci_iter(n):
 
 print('iteration: ',fibonacci_iter(15))
 
-#Recursion and Dynamic Programming Approach -> O(n) very efficient
+#Recursion and Dynamic Programming (Memoization) Approach -> O(n) very efficient
 def fibonacci_rec_dynamic(n):
   cache = {}
   #using Closure function to avoid defining a global variable for cache
